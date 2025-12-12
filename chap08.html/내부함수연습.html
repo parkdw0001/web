@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <script>
+      function outer() {
+        console.log("hi1");
+
+        function inner() {
+          console.log("hi2");
+
+          function inner2() {
+            console.log("hi3");
+          }
+          inner2();
+        }
+        inner();
+      }
+      outer();
+    </script>
+  </body>
+</html>
